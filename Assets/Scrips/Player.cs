@@ -32,7 +32,17 @@ public class Player : Photon.MonoBehaviour
     {
         if (photonView.isMine)
         {
+            if (!Pause.paused)
+            {
             CheckInput();
+            }
+        }
+
+        bool pause = Input.GetKeyDown(KeyCode.Escape);
+
+        if (pause)
+        {
+            GameObject.Find("pause").GetComponent<Pause>().TogglePause();
         }
     }
 

@@ -6,23 +6,28 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     [SerializeField] private string VersionName = "0.1";
-    [SerializeField] private GameObject UsernameMenu;
-    [SerializeField] private GameObject ConnectPanel;
+    private float bloop;
+    [SerializeField] private GameObject go_UsernameMenu;
+    [SerializeField] private GameObject go_MainMenu;
+    [SerializeField] private GameObject go_CreateGameMenu;
+    [SerializeField] private GameObject go_JoinGameMenu;
+
 
     [SerializeField] private InputField usernameInput;
     [SerializeField] private InputField CreateGameInput;
     [SerializeField] private InputField JoinGameInput;
 
-    [SerializeField] private GameObject StartBtn;
-
+    [SerializeField] private GameObject UsernameBtn;
+    [SerializeField] private GameObject JoinBtn;
+    [SerializeField] private GameObject CreateBtn;
     private void Awake()
     {
         PhotonNetwork.ConnectUsingSettings(VersionName);
-
     }
+
     private void Start()
     {
-        UsernameMenu.SetActive(true);
+        go_UsernameMenu.SetActive(true);
 
     }
     private void OnConnectedToMaster()
@@ -33,20 +38,68 @@ public class MenuController : MonoBehaviour
 
     public void ChangeUserNameInput()
     {
-        if (usernameInput.text.Length >= 3)
+        if (usernameInput.text.Length >= 1)
         {
-            StartBtn.SetActive(true);
+            UsernameBtn.SetActive(true);
         }
         else
         {
-            StartBtn.SetActive(false);
+            UsernameBtn.SetActive(false);
+        }
+    }
+    public void ChangeJoinInput()
+    {
+        if (JoinGameInput.text.Length >= 4)
+        {
+            JoinBtn.SetActive(true);
+        }
+        else
+        {
+            JoinBtn.SetActive(false);
+        }
+    }
+    public void ChangeCreateInput()
+    {
+        if (CreateGameInput.text.Length >= 4)
+        {
+            CreateBtn.SetActive(true);
+        }
+        else
+        {
+            CreateBtn.SetActive(false);
         }
     }
 
     public void SetUsername()
     {
-        UsernameMenu.SetActive(false);
+        go_UsernameMenu.SetActive(false);
+        go_MainMenu.SetActive(true);
         PhotonNetwork.playerName = usernameInput.text;
+    }
+
+    public void CreateGameMenu()
+    {
+        go_MainMenu.SetActive(false);
+        go_CreateGameMenu.SetActive(true);
+        CreateBtn.SetActive(false);
+    }
+     public void ConnectGameMenu()
+    {
+        go_MainMenu.SetActive(false);
+        go_JoinGameMenu.SetActive(true);
+        JoinBtn.SetActive(false);
+    }
+    public void ChangeUsername()
+    {
+        go_MainMenu.SetActive(false);
+        go_UsernameMenu.SetActive(true);
+    }
+
+    public void BackToMainMenu()
+    {
+        go_MainMenu.SetActive(true);
+        go_JoinGameMenu.SetActive(false);
+        go_CreateGameMenu.SetActive(false);
     }
 
     public void CreateGame()
@@ -59,6 +112,7 @@ public class MenuController : MonoBehaviour
     {
         PhotonNetwork.JoinRoom(JoinGameInput.text);
     }
+
 
     private void OnJoinedRoom()
     {
