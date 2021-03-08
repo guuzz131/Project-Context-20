@@ -7,7 +7,11 @@ public class GameManager : MonoBehaviour
 {
     public GameObject playerPrefab;
     public GameObject GameCanvas;
+    public GameObject PauseMenu;
     public GameObject SceneCamera;
+
+    public PhotonPlayer Player;
+
     public Text PingText;
 
     private void Awake()
@@ -26,5 +30,10 @@ public class GameManager : MonoBehaviour
         PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(this.transform.position.x * randomValue, this.transform.position.y, this.transform.position.z), Quaternion.identity, 0);
         GameCanvas.SetActive(false);
         SceneCamera.SetActive(false);
+    }
+
+    public void PauseMenuCanvas()
+    {
+        PauseMenu.SetActive(true);
     }
 }
