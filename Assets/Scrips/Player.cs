@@ -9,13 +9,16 @@ public class Player : Photon.MonoBehaviour
     public Rigidbody rdbd;
     public GameObject playerCamera;
     public Text playernameText;
+    public GameObject gameManager;
 
     public float moveSpeed;
 
     private void Awake()
     {
+        gameManager = GameObject.Find("GameManager");
         if (photonView.isMine)
         {
+            gameManager.GetComponent<GameManager>().thisPlayer = gameObject.transform;
             playerCamera.SetActive(true);
             playernameText.text = PhotonNetwork.playerName;
         }
