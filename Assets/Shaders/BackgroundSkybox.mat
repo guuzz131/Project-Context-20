@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BackgroundSkybox
+  m_Shader: {fileID: -6465566751694194690, guid: 011b8d53bd8b6da4982d812edd93e2e1,
+    type: 3}
+  m_ShaderKeywords: MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _SHADOWS_SOFT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_bd51fec1e94f4dd9bd25c6d47934c77c:
+        m_Texture: {fileID: 2800000, guid: 4f400387051c2504087f4730164051fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1b23ad90b8714e1b8575a16e2b4743a4: 32
+    - Vector1_36d494c320ae4385a65e8d66daac8edc: 0.1
+    - Vector1_a2fd6463d79c4a8b9fa77ebf2f71953b: 0.7
+    - Vector1_cbf29993ce394b268e414b39deccf919: 0.1
+    m_Colors:
+    - Color_133c466e5c2744af88faa13280c1e60b: {r: 0.047169805, g: 0.026106557, b: 0.047169805,
+        a: 1}
+    - Color_505d02ab959745998bbbbb533954da12: {r: 1, g: 1, b: 1, a: 1}
+    - Color_509490d36e3c4a8db58b2677fe12c6ec: {r: 1, g: 1, b: 1, a: 1}
+    - Color_a4cbe2b4666c4118926ec28de1b37483: {r: 1, g: 0.30980393, b: 0.30980393,
+        a: 1}
+    - Color_b029166f0de54525b6bc1478b081fefb: {r: 0, g: 1, b: 0.79691243, a: 1}
+    - Color_ee329af5d7824a9e9d277140d3742095: {r: 0.8962264, g: 0.48756966, b: 0.48756966,
+        a: 1}
+    - Vector2_d06adcaf4fe242acb6d3707e326cac30: {r: 19.09, g: 10, b: 0, a: 0}
+  m_BuildTextureStacks: []

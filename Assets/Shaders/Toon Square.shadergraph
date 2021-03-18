@@ -43,17 +43,7 @@
             "m_Id": "d06adcaf4fe242acb6d3707e326cac30"
         }
     ],
-    "m_Keywords": [
-        {
-            "m_Id": "cd8ddeeb6cc14e71895087b9c0e2773d"
-        },
-        {
-            "m_Id": "ab2e15cb5e3242fe94a7657817eb63a0"
-        },
-        {
-            "m_Id": "0dd4902730e9441a85c44c9e7b0d3122"
-        }
-    ],
+    "m_Keywords": [],
     "m_Nodes": [
         {
             "m_Id": "f20ba4017b2c45ac82ff1d66fb1d669c"
@@ -224,9 +214,6 @@
         },
         {
             "m_Id": "8a95da05e30048e2b566b343c0d9c60a"
-        },
-        {
-            "m_Id": "4d253060f6d2417390b5c83ef7bbe320"
         }
     ],
     "m_StickyNoteDatas": [],
@@ -1599,25 +1586,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
-    "m_ObjectId": "0dd4902730e9441a85c44c9e7b0d3122",
-    "m_Guid": {
-        "m_GuidSerialized": "dfdf3dbc-2c51-4507-97ca-5582fa64729d"
-    },
-    "m_Name": "Soft Shadows",
-    "m_DefaultReferenceName": "BOOLEAN_0DD4902730E9441A85C44C9E7B0D3122_ON",
-    "m_OverrideReferenceName": "_SHADOWS_SOFT",
-    "m_GeneratePropertyBlock": true,
-    "m_KeywordType": 0,
-    "m_KeywordDefinition": 1,
-    "m_KeywordScope": 0,
-    "m_Entries": [],
-    "m_Value": 1,
-    "m_IsEditable": true
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "127cf7ef4c3c42ee84b28d9ab7795db8",
     "m_Id": 0,
@@ -2377,9 +2345,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 635.3333740234375,
-            "y": -640.666748046875,
-            "width": 208.0,
+            "x": 205.33334350585938,
+            "y": -700.6666870117188,
+            "width": 207.99998474121095,
             "height": 302.0
         }
     },
@@ -3201,17 +3169,6 @@
         "g": 0.5,
         "b": 0.5,
         "a": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "4d253060f6d2417390b5c83ef7bbe320",
-    "m_Title": "Specular Reflection",
-    "m_Position": {
-        "x": 403.3333740234375,
-        "y": 376.00006103515627
     }
 }
 
@@ -4691,10 +4648,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 367.33331298828127,
-            "y": -417.99993896484377,
-            "width": 208.00001525878907,
-            "height": 301.9999694824219
+            "x": 732.6666870117188,
+            "y": -492.0,
+            "width": 208.0,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -5248,25 +5205,6 @@
         "e32": 0.0,
         "e33": 1.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
-    "m_ObjectId": "ab2e15cb5e3242fe94a7657817eb63a0",
-    "m_Guid": {
-        "m_GuidSerialized": "a6193560-5f79-4915-8d0d-d42ac8eb9ddf"
-    },
-    "m_Name": "Shadows Cascade",
-    "m_DefaultReferenceName": "BOOLEAN_AB2E15CB5E3242FE94A7657817EB63A0_ON",
-    "m_OverrideReferenceName": "_MAIN_LIGHT_SHADOWS_CASCADE",
-    "m_GeneratePropertyBlock": true,
-    "m_KeywordType": 0,
-    "m_KeywordDefinition": 1,
-    "m_KeywordScope": 0,
-    "m_Entries": [],
-    "m_Value": 1,
-    "m_IsEditable": true
 }
 
 {
@@ -6249,25 +6187,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.ShaderKeyword",
-    "m_ObjectId": "cd8ddeeb6cc14e71895087b9c0e2773d",
-    "m_Guid": {
-        "m_GuidSerialized": "9d853755-becd-4bfa-947a-d5755744ed38"
-    },
-    "m_Name": "Shadows",
-    "m_DefaultReferenceName": "BOOLEAN_CD8DDEEB6CC14E71895087B9C0E2773D_ON",
-    "m_OverrideReferenceName": "MAIN_LIGHT_CALCULATE_SHADOWS",
-    "m_GeneratePropertyBlock": true,
-    "m_KeywordType": 0,
-    "m_KeywordDefinition": 1,
-    "m_KeywordScope": 0,
-    "m_Entries": [],
-    "m_Value": 1,
-    "m_IsEditable": true
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "cff8b3c2171e401db4e68ffd56fa132f",
     "m_Id": 1,
@@ -6349,10 +6268,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 180.00001525878907,
-            "y": -562.6666870117188,
+            "x": 516.6666870117188,
+            "y": -741.3334350585938,
             "width": 208.0,
-            "height": 278.0
+            "height": 278.0000305175781
         }
     },
     "m_Slots": [
