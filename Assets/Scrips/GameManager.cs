@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject SceneCamera;
 
     public PhotonPlayer Player;
+    public Transform thisPlayer;
 
     public Text PingText;
 
