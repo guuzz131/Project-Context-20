@@ -12,8 +12,11 @@ public class GameManager : MonoBehaviour
 
     public PhotonPlayer Player;
     public Transform thisPlayer;
-
+    public string[] gameStates;
+    public int currentState;
     public Text PingText;
+
+    public bool updateGameStatebool;
 
     private void Awake()
     {
@@ -23,6 +26,29 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         PingText.text = "Ping: " + PhotonNetwork.GetPing();
+
+        if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
+        {
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                PhotonView photonView = PhotonView.Get(this);
+                photonView.RPC("UpdateGameState", PhotonTargets.All);
+            }
+        }
+        if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
+        {
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                PhotonView photonView = PhotonView.Get(this);
+                photonView.RPC("RemoveGameState", PhotonTargets.All);
+            }
+        }
+        if (updateGameStatebool)
+        {
+            PhotonView photonView = PhotonView.Get(this);
+            photonView.RPC("UpdateGameState", PhotonTargets.All);
+            updateGameStatebool = false;
+        }
     }
 
     public void SpawnPlayer()
@@ -36,5 +62,17 @@ public class GameManager : MonoBehaviour
     public void PauseMenuCanvas()
     {
         PauseMenu.SetActive(true);
+    }
+
+    [PunRPC]
+    public void UpdateGameState()
+    {
+        currentState += 1;
+    }
+
+    [PunRPC]
+    public void RemoveGameState()
+    {
+        currentState -= 1;
     }
 }
