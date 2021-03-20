@@ -11,6 +11,7 @@ public class TeacherText : MonoBehaviour
     public Image textWolk;
     public GameManager gameManager;
     public GameObject tekstWolk;
+    public GameObject greenscreenUI;
     public string[] allText;
     public string[] textAfterFinish;
     public float waitTime;
@@ -45,13 +46,17 @@ public class TeacherText : MonoBehaviour
                 hasTalked = true;
             } else if (gameManager.currentState == gameStatePosition + 1 && !hasTalked2 && !isVictor)
             {
+                if (gameManager.currentState == 5)
+                {
+                    greenscreenUI.SetActive(false);
+                }
                 tekstWolk.SetActive(true);
                 for (int i = 0; i < textAfterFinish.Length; i++)
                 {
                     StartCoroutine(NextTextCoroutine(waitTime * i, textAfterFinish[i]));
                 }
-                float a = allText.Length * waitTime;
-                Invoke("Stoptext", a);
+                float t = textAfterFinish.Length * waitTime;
+                Invoke("Stoptext", t);
                 hasTalked2 = true;
             }
             

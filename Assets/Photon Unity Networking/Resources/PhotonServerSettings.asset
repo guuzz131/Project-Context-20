@@ -40,9 +40,9 @@ MonoBehaviour:
   - PunPickup
   - PunPickupSimple
   - PunRespawn
+  - RemoveGameState
   - RequestForPickupItems
   - RequestForPickupTimes
   - TaggedPlayer
   - UpdateGameState
-  - RemoveGameState
   DisableAutoOpenWizard: 1
