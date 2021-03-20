@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,10 +13,18 @@ public class Player : Photon.MonoBehaviour
     public GameObject gameManager;
 
     public float moveSpeed;
+    public float rotateSpeed;
+
+    public Vector3 inputMovement;
+    public Vector3 otherMovement;
+
+    public Vector3 curPos;
+    public Vector3 lastPos;
 
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager");
+
         if (photonView.isMine)
         {
             gameManager.GetComponent<GameManager>().thisPlayer = gameObject.transform;
@@ -37,40 +46,47 @@ public class Player : Photon.MonoBehaviour
         {
             if (!Pause.paused)
             {
-            CheckInput();
+                CheckInput();
+                rotateToMovement();
             }
+        }
+        else
+        {
+            CheckMovement();
         }
 
         bool pause = Input.GetKeyDown(KeyCode.Escape);
-
         if (pause)
         {
             GameObject.Find("pause").GetComponent<Pause>().TogglePause();
         }
     }
 
+    private void CheckMovement()
+    {
+        curPos = gameObject.transform.position;
+        otherMovement = curPos - lastPos;
+        if (otherMovement.magnitude != 0)
+        {
+            var rotation = Quaternion.LookRotation(inputMovement);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotateSpeed);
+        }
+        lastPos = curPos;
+    }
+
+    private void rotateToMovement()
+    {
+        if (inputMovement.magnitude == 0)
+        {
+            return;
+        }
+        var rotation = Quaternion.LookRotation(inputMovement);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, rotateSpeed);
+    }
+
     private void CheckInput()
     {
-        /*
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            transform.position = new Vector3(transform.position.x * moveSpeed * Time.deltaTime * -1, transform.position.y, transform.position.z);
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            transform.position = new Vector3(transform.position.x * moveSpeed * Time.deltaTime, transform.position.y, transform.position.z);
-        }
-        else if (Input.GetKeyDown(KeyCode.W))
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z * moveSpeed * Time.deltaTime);
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z * moveSpeed * Time.deltaTime * -1);
-        }*/
-        var inputMovement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        inputMovement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         transform.Translate(inputMovement * Time.deltaTime * moveSpeed, Space.World);
-        //var move = new Vector3(Input.GetAxisRaw("Horizontal"), 0);
-        //transform.position += move * moveSpeed * Time.deltaTime;
     }
 }
