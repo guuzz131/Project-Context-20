@@ -28,5 +28,9 @@ public class PasswordScript : MonoBehaviour
         {
             PhotonNetwork.LoadLevel("MainMenu");
         }
+        else
+        {
+
+        }
     }
 }
