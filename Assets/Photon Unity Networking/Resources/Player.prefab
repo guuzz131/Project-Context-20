@@ -135,7 +135,7 @@ MonoBehaviour:
   playerCamera: {fileID: 4318561825928234185}
   playernameText: {fileID: 2057072724904234738}
   gameManager: {fileID: 0}
-  moveSpeed: 5
+  moveSpeed: 7
   rotateSpeed: 4
   inputMovement: {x: 0, y: 0, z: 0}
   otherMovement: {x: 0, y: 0, z: 0}
