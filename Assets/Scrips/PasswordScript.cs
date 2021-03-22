@@ -13,11 +13,13 @@ public class PasswordScript : MonoBehaviour
     public TMP_Text interactText;
     public string password;
 
+    public GameManager gameManager;
+
     private bool fieldActive;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 6)
+        if (other.gameObject == gameManager.thisPlayer.gameObject)
         {
             passwordCanvas.gameObject.SetActive(true);
         }
@@ -28,11 +30,17 @@ public class PasswordScript : MonoBehaviour
         passwordCanvas.gameObject.SetActive(false);
         if (passwordInput.text == password)
         {
-            finishCanvas.gameObject.SetActive(true);
+            GameCompleted();
         }
         else
         {
             passwordCanvas.gameObject.SetActive(false);
         }
+    }
+
+    [PunRPC]
+    public void GameCompleted()
+    {
+        finishCanvas.gameObject.SetActive(true);
     }
 }

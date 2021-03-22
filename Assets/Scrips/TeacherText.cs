@@ -36,28 +36,11 @@ public class TeacherText : MonoBehaviour
         {
             if (gameManager.currentState == gameStatePosition && !hasTalked)
             {
-                tekstWolk.SetActive(true);
-                for (int i = 0; i < allText.Length; i++)
-                {
-                    StartCoroutine(NextTextCoroutine(waitTime * i, allText[i]));
-                }
-                float a = allText.Length * waitTime;
-                Invoke("Stoptext", a);
-                hasTalked = true;
+
+                FirstText();
             } else if (gameManager.currentState == gameStatePosition + 1 && !hasTalked2 && !isVictor)
             {
-                if (gameManager.currentState == 5)
-                {
-                    greenscreenUI.SetActive(false);
-                }
-                tekstWolk.SetActive(true);
-                for (int i = 0; i < textAfterFinish.Length; i++)
-                {
-                    StartCoroutine(NextTextCoroutine(waitTime * i, textAfterFinish[i]));
-                }
-                float t = textAfterFinish.Length * waitTime;
-                Invoke("Stoptext", t);
-                hasTalked2 = true;
+                SecondText();
             }
             
         }
@@ -82,5 +65,35 @@ public class TeacherText : MonoBehaviour
         {
             gameManager.updateGameStatebool = true;
         }
+    }
+
+    [PunRPC]
+    private void FirstText()
+    {
+        tekstWolk.SetActive(true);
+        for (int i = 0; i < allText.Length; i++)
+        {
+            StartCoroutine(NextTextCoroutine(waitTime * i, allText[i]));
+        }
+        float a = allText.Length * waitTime;
+        Invoke("Stoptext", a);
+        hasTalked = true;
+    }
+
+    [PunRPC]
+    private void SecondText()
+    {
+        if (gameManager.currentState == 5)
+        {
+            greenscreenUI.SetActive(false);
+        }
+        tekstWolk.SetActive(true);
+        for (int i = 0; i < textAfterFinish.Length; i++)
+        {
+            StartCoroutine(NextTextCoroutine(waitTime * i, textAfterFinish[i]));
+        }
+        float t = textAfterFinish.Length * waitTime;
+        Invoke("Stoptext", t);
+        hasTalked2 = true;
     }
 }

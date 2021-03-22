@@ -45,4 +45,7 @@ MonoBehaviour:
   - RequestForPickupTimes
   - TaggedPlayer
   - UpdateGameState
+  - FirstText
+  - GameCompleted
+  - SecondText
   DisableAutoOpenWizard: 1
