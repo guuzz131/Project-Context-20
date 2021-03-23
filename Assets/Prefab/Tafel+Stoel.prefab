@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3002621842175410297}
+  - component: {fileID: 1101114426613524776}
+  - component: {fileID: 4226360628936762602}
   m_Layer: 0
   m_Name: Tafel+Stoel
   m_TagString: Untagged
@@ -32,6 +34,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1101114426613524776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083945627313142650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.6129184, y: 2.6273031, z: 3.0673008}
+  m_Center: {x: -0.41881028, y: -0.81365156, z: -0.24121207}
+--- !u!65 &4226360628936762602
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083945627313142650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4502921, y: 4.730171, z: 1.599788}
+  m_Center: {x: -0.22514616, y: -0.50782084, z: 2.1013527}
 --- !u!1001 &4985481849703998788
 PrefabInstance:
   m_ObjectHideFlags: 0
