@@ -2846,37 +2846,37 @@ PrefabInstance:
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.42495
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.42495
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.42495
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.88
+      value: -9.53
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.311871
+      value: 12.13
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.44
+      value: -8.26
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
@@ -2886,7 +2886,7 @@ PrefabInstance:
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
@@ -2901,7 +2901,7 @@ PrefabInstance:
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6117301002060350493, guid: e1f75f9e3adcaf340813752a1ecd36d3,
         type: 3}
@@ -4645,7 +4645,7 @@ PrefabInstance:
     - target: {fileID: 7724075082930563481, guid: 34b359456ea0d48409e7ffcfc48cc072,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.14
+      value: -7.6
       objectReference: {fileID: 0}
     - target: {fileID: 7724075082930563481, guid: 34b359456ea0d48409e7ffcfc48cc072,
         type: 3}
@@ -4655,7 +4655,7 @@ PrefabInstance:
     - target: {fileID: 7724075082930563481, guid: 34b359456ea0d48409e7ffcfc48cc072,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.53
+      value: -8.59
       objectReference: {fileID: 0}
     - target: {fileID: 7724075082930563481, guid: 34b359456ea0d48409e7ffcfc48cc072,
         type: 3}
@@ -14502,13 +14502,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761986054}
-  m_LocalRotation: {x: 0.09879876, y: -0, z: -0, w: 0.9951074}
-  m_LocalPosition: {x: 0, y: 0.76000005, z: 0.15999985}
-  m_LocalScale: {x: 0.74172, y: 0.74172, z: 0.74172}
+  m_LocalRotation: {x: -0, y: -0.70749146, z: -0, w: 0.7067219}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: -0.6, z: -0.6}
   m_Children: []
   m_Father: {fileID: 1940177952}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 11.34, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.062, z: 0}
 --- !u!65 &761986056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21256,7 +21256,7 @@ MonoBehaviour:
     bij Games en Interactie.  '
   - 'Mijn lessen geef ik altijd op een leuke, nieuwe manier. Ik gebruik namelijk
     altijd een greenscreen in mijn lessen. '
-  - 'Oh Victor is zijn wachtwoord weer eens vergeten?  '
+  - 'Oh Viktor is zijn wachtwoord weer eens vergeten?  '
   - Ik weet nog wel iets over het wachtwoord maar dan moeten jullie eerst iets voor
     mij doen!
   - 'Ik ben mijn greenscreen helaas kwijt geraakt hier ergens in de school. '
@@ -21270,7 +21270,7 @@ MonoBehaviour:
   - 'Het wachtwoord had achteraan het huisnummer van deze school staan. '
   - 'Ina-Boudier Bakkerlaan is de straat maar het nummer weet ik even niet meer. '
   - 'Kan ik nog iets voor jullie doen? '
-  - "Victor\u2019s favoriete kleur zeg je? Volgensmij is dat blauw. "
+  - "Viktor\u2019s favoriete kleur zeg je? Volgensmij is dat blauw. "
   - 'Ik zou Richard vragen over de rest van het wachtwoord. '
   - 'Succes met het oplossen van dit raadsel! '
   waitTime: 4
@@ -30700,17 +30700,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 32d3676119231654683d0903ba393485,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.999998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32d3676119231654683d0903ba393485,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.64000005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32d3676119231654683d0903ba393485,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.540001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32d3676119231654683d0903ba393485,
         type: 3}
@@ -34764,7 +34764,7 @@ MonoBehaviour:
   allText:
   - 'Hallo nieuwe ontwerpers! Mijn naam is Richard. '
   - 'Ik heb er erg veel zin in om jullie les te gaan geven dit jaar! '
-  - 'Victor zijn wachtwoord? Daar weet ik wel wat van volgensmij. '
+  - 'Viktor zijn wachtwoord? Daar weet ik wel wat van volgensmij. '
   - 'Maar eerst wil ik jullie improvisatie skills testen. '
   - 'Pak een object uit je omgeving, maakt niet uit wat. '
   - 'Vertel de andere over dit object en wat het is. '
@@ -34778,7 +34778,7 @@ MonoBehaviour:
   - 'Ook begint elk woord met een hoofdletter volgensmij. '
   - 'Hopelijk kunnen jullie nu het wachtwoord oplossen. '
   - 'Succes ontwerpers! '
-  - Victors computer staat in de kantine!
+  - Viktor zijn computer staat in de kantine!
   waitTime: 4
   teacherNameStrng: Richard
   teacherImageSprite: {fileID: 21300000, guid: 99a64a604ed025f4a8e8570b2e997ac7, type: 3}
@@ -37504,7 +37504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940177951}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.1, y: 0.56, z: 8.46}
+  m_LocalPosition: {x: 4.08, y: 1.21, z: 5.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 761986055}
@@ -37604,8 +37604,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.644945, y: 1, z: 3.0716367}
-  m_Center: {x: -0.056406975, y: 0, z: -0.48175168}
+  m_Size: {x: 5.6343865, y: 1, z: 3.638369}
+  m_Center: {x: 0.027002096, y: 0, z: -0.7651179}
 --- !u!1 &1945833100
 GameObject:
   m_ObjectHideFlags: 0
@@ -43369,7 +43369,7 @@ MonoBehaviour:
   allText:
   - 'Hallo allemaal, mijn naam is Raf. '
   - Ik zal jullie komend jaar visueel denken gaan geven!
-  - Het wachtwoord van Victor zijn computer is weg?!
+  - Het wachtwoord van Viktor zijn computer is weg?!
   - "Dat is een probleem, volgensmij weet ik het wachtwoord nog wel\u2026.."
   - Maar eerst wil ik jullie leren kennen.
   - Vertel mij wat jullie favoriete film of serie is.
@@ -43979,7 +43979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7269552359434671541}
   m_LocalRotation: {x: -0, y: 0.14504062, z: -0, w: 0.9894257}
-  m_LocalPosition: {x: -18.09, y: 1, z: -11.76}
+  m_LocalPosition: {x: -14.58, y: 1, z: -11.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 387855319750164889}
@@ -50648,8 +50648,8 @@ MonoBehaviour:
   tekstWolk: {fileID: 1606381871180816656}
   greenscreenUI: {fileID: 0}
   allText:
-  - "Hallo toekomstige HKU\u2019ers! Mijn naam is Victor en ik ben de directeur van
-    deze HKU vestiging. "
+  - "Hallo toekomstige HKU\u2019ers! Mijn naam is Viktor en ik ben de directeur van
+    Games & Interactie. "
   - 'Wat leuk dat jullie meedoen aan de introweek! '
   - 'Er is helaas een klein probleempje. '
   - Ik ben het wachtwoord van mijn computer vergeten.
@@ -50662,7 +50662,7 @@ MonoBehaviour:
   - Laten we beginnen bij Raf, hij zou hier ergens op school moeten zijn.
   textAfterFinish: []
   waitTime: 4
-  teacherNameStrng: Victor
+  teacherNameStrng: Viktor
   teacherImageSprite: {fileID: 21300000, guid: b542ffd6dd21176478830ff9838e8fa0, type: 3}
   gameStatePosition: 1
   isVictor: 1
