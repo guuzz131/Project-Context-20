@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wood 1
+  m_Name: Kliko
   m_Shader: {fileID: -6465566751694194690, guid: 011b8d53bd8b6da4982d812edd93e2e1,
     type: 3}
   m_ShaderKeywords: 
@@ -47,11 +47,10 @@ Material:
     - Vector1_a2fd6463d79c4a8b9fa77ebf2f71953b: 0.7
     - Vector1_cbf29993ce394b268e414b39deccf919: 0.1
     m_Colors:
-    - Color_133c466e5c2744af88faa13280c1e60b: {r: 0.271, g: 0, b: 0.026568739, a: 1}
+    - Color_133c466e5c2744af88faa13280c1e60b: {r: 0.275, g: 0.2283898, b: 0, a: 1}
     - Color_505d02ab959745998bbbbb533954da12: {r: 1, g: 1, b: 1, a: 1}
     - Color_509490d36e3c4a8db58b2677fe12c6ec: {r: 1, g: 1, b: 1, a: 1}
-    - Color_a4cbe2b4666c4118926ec28de1b37483: {r: 0.9716981, g: 0.9716981, b: 0.9716981,
-        a: 1}
+    - Color_a4cbe2b4666c4118926ec28de1b37483: {r: 1, g: 1, b: 1, a: 1}
     - Color_b029166f0de54525b6bc1478b081fefb: {r: 1, g: 1, b: 1, a: 1}
     - Color_ee329af5d7824a9e9d277140d3742095: {r: 0.2735849, g: 0.2735849, b: 0.2735849,
         a: 1}
